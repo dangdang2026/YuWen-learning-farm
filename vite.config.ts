@@ -6,7 +6,7 @@ export default defineConfig({
   base: './',
   build: {
     sourcemap: 'hidden',
-    outDir: 'dist',
+    outDir: 'docs',
     assetsInlineLimit: 100000000,
     cssCodeSplit: false,
     chunkSizeWarningLimit: 100000000,
