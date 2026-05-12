@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
 import Home from './pages/Home';
 import MindMap from './pages/MindMap';
@@ -9,7 +9,7 @@ import Collection from './pages/Collection';
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <div className="min-h-screen bg-gradient-to-b from-green-50 via-blue-50 to-sky-100">
         <AnimatePresence mode="wait">
           <Routes>
@@ -22,7 +22,7 @@ function App() {
           </Routes>
         </AnimatePresence>
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
